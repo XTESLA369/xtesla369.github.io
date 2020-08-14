@@ -1,0 +1,900 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  <title>UE4 - xteslalala</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_6peoq002giu.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_pjno9b9zyxs.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.0.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>UE4有意思吧</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                主页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                文章
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container page-header text-center fade-in-up">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              
+  <div class="mt-3 post-meta">
+    <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+    <time datetime="2020-08-14 20:17" pubdate>
+      August 14, 2020 pm
+    </time>
+  </div>
+
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      4.6k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      49
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- 不蒜子统计文章PV -->
+      <span id="busuanzi_container_page_pv" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="busuanzi_value_page_pv"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto" id="post">
+            <!-- SEO header -->
+            <h1 style="display: none">UE4</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：August 14, 2020 pm
+                
+              </p>
+            
+            <div class="markdown-body" id="post-body">
+              <p>哎，从GI全局光照过来的。这类高端知识联系可真紧密啊。</p>
+<p>光线追踪、实时渲染、全局光照。。。搞得我头晕哪，那是因为头发少了，阳气不足，它好我也好。</p>
+<h2 id="虚幻官方教学视频："><a href="#虚幻官方教学视频：" class="headerlink" title="虚幻官方教学视频："></a>虚幻官方教学视频：</h2><p><a href="https://link.zhihu.com/?target=https://learn.unrealengine.com/course/2449702">实时渲染基础learn.unrealengine.com</a><a href="https://link.zhihu.com/?target=https://www.unrealengine.com/zh-CN/onlinelearning-courses/an-in-depth-look-at-real-time-rendering">实时渲染进阶www.unrealengine.com</a></p>
+<h2 id="【导图】"><a href="#【导图】" class="headerlink" title="【导图】"></a>【导图】</h2><p><img src="https://pic3.zhimg.com/80/v2-06c0199d181ec08d7557ac166f2e5544_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p><img src="https://pic2.zhimg.com/80/v2-ab63fe22a0dbb8be20ef686565d86912_1440w.png" srcset="/img/loading.gif" alt="img"></p>
+<h2 id="一、实时渲染基础知识"><a href="#一、实时渲染基础知识" class="headerlink" title="一、实时渲染基础知识"></a>一、实时渲染基础知识</h2><p>【提纲】</p>
+<ul>
+<li>Scalability——可延展性</li>
+<li>Deferred/Forward Rendering——延迟渲染/正向渲染</li>
+<li>GBuffer——G缓冲</li>
+<li>Vertex and Pixel Shader Basics——顶点着色器和像素着色器</li>
+</ul>
+<p><img src="https://pic4.zhimg.com/80/v2-abdbce94a1ee42f04f2046690b4558dc_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<hr>
+<h2 id="【1-1】实时渲染相关"><a href="#【1-1】实时渲染相关" class="headerlink" title="【1.1】实时渲染相关"></a>【1.1】实时渲染相关</h2><p><a href="https://link.zhihu.com/?target=https://baike.baidu.com/item/%E5%AE%9E%E6%97%B6%E6%B8%B2%E6%9F%93/7556269?fr=aladdin">实时渲染_百度百科baike.baidu.com<img src="https://picb.zhimg.com/v2-a64774de231eee7f3449f6649c9cdaef_180x120.jpg" srcset="/img/loading.gif" alt="图标"></a></p>
+<ul>
+<li><strong>本质</strong>——实时渲染的本质就是对图形数据的实时计算和输出。</li>
+<li><strong>重要部分</strong>——性能是实时渲染最重要的部分。</li>
+<li><strong>过程</strong>——实时渲染实质上融合了大量不同的方案，它非常复杂而且要求非常苛刻，并且将部分运算放在预计算阶段。</li>
+</ul>
+<p>实时渲染可以分为两部分：</p>
+<ul>
+<li>一部分是预计算阶段</li>
+<li>另一部分是具体的实时渲染阶段</li>
+</ul>
+<p>比如说剔除对象，剔除决定哪些对象可见，哪些不可见，也就是哪些对象应该被渲染，哪些不被渲染，比如有一个墙体，摄像机正对这个墙体，那么墙体后面的物体就不会被渲染，所以会被剔除掉。</p>
+<p>总共有4种剔除对象的方法，因为很难确定哪些物体可见不可见，所以最后会有很多办法。</p>
+<p>剔除中的一个步骤就是<strong>预计算</strong>，其它全部位于实时渲染阶段。</p>
+<hr>
+<h2 id="【1-2】Scalability——可延展性"><a href="#【1-2】Scalability——可延展性" class="headerlink" title="【1.2】Scalability——可延展性"></a>【1.2】Scalability——可延展性</h2><p>【1.2.1】含义</p>
+<p><strong>为什么叫做可延展性，就是因为渲染效果可以在程序运行时的任何时刻调整渲染效果。</strong></p>
+<p>实时渲染的独特之处在于它可以让我们甚至强制我们可以在任何时刻更改画面质量，也就是渲染质量。</p>
+<p>所以在渲染的时候，渲染的效果可以被随意调整，比如提高或降低帧率、提升画面质量、降低渲染速度等。</p>
+<p>而且它允许内容被移植到不同的设备上运行，不管是应用还是游戏，PC或手机。</p>
+<p>【1.2.2】举例</p>
+<p><strong>【调出虚幻的cmd控制台】</strong></p>
+<ul>
+<li>鼠标在Viewport内，可以按下Esc下面的波浪键<code>~</code>调出虚幻的cmd控制台</li>
+<li>或者是Window-&gt;Developer Tools开发者工具-&gt;找到Output Log</li>
+</ul>
+<p><img src="https://picb.zhimg.com/80/v2-bce433dabeadf18131c24909c029a0af_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p>比如我们键入 <code>r.shadowQuality 0</code>，那么物体就不会有阴影了。 再<code>r.shadowQuality 1</code>那么物体就又有阴影了，但是可能很难看有锯齿，如下面动图开始的时候，可以<code>r.shadowQuality 4</code>让阴影效果更好一点。</p>
+<p><img src="https://pic4.zhimg.com/v2-819fdc681fcd14c85efef703158912f6_b.jpg" srcset="/img/loading.gif" alt="img"></p>
+<hr>
+<h2 id="【1-3】Deferred-Forward-Rendering-延迟渲染-正向渲染"><a href="#【1-3】Deferred-Forward-Rendering-延迟渲染-正向渲染" class="headerlink" title="【1.3】Deferred/Forward Rendering 延迟渲染/正向渲染"></a>【1.3】Deferred/Forward Rendering 延迟渲染/正向渲染</h2><p>【1.3.1】区别</p>
+<p>简单来说，并非像以下这么绝对。</p>
+<ul>
+<li>Deferred Rendering 延迟渲染 延迟渲染能够让大型应用拥有更出色稳定的性能。（PC游戏）</li>
+<li>Forward Rendering 正向渲染 正向渲染能够为小型应用或者是低端设备带来更为流畅的性能。（手游、VR游戏，针对硬件性能有限的设备）</li>
+</ul>
+<p>市面上所有的引擎要么采用延迟渲染，要么采用正向渲染，反正总共有两种方式实现实时渲染，虚幻默认采用的是延迟渲染，但是也可以设置为正向渲染。</p>
+<p>在多数情况中，延迟渲染最合适。</p>
+<p>基本上市面上所看到的所有游戏大作基本都是采用延迟渲染的方案的。</p>
+<p>【1.3.2】缺点</p>
+<p><strong>延迟渲染的缺点：抗锯齿。（正向渲染能提供更好的抗锯齿效果），毕竟两者的实现方案不同。</strong></p>
+<p><strong>延迟渲染中，我们只能使用TAA：Temporal Anti-Aliasing，临时抗锯齿。但是</strong>TAA会导致画面中看到重影。</p>
+<hr>
+<h2 id="【1-4】G-Buffer"><a href="#【1-4】G-Buffer" class="headerlink" title="【1.4】G-Buffer"></a>【1.4】G-Buffer</h2><p>【1.4.1】本质</p>
+<p>G缓冲，延迟渲染器需要使用到G缓冲，正向渲染通常不需要。</p>
+<p><strong>G缓冲本质上是为每一帧画面准备的一组图像，这些图像包含了渲染管线中后期要用到的所有信息。</strong></p>
+<p>我们本质上就是在实时合成图像，就是要渲染出不同版本的图像，然后将这些侧重点各异的图像保存在G缓冲中，我们可以借助这些图像计算出其他内容，并将其用于进一步画面渲染。</p>
+<p>【1.4.2】举例</p>
+<p>我们如何在场景中添加雾效呢？</p>
+<p>为了加入fog，我们需要计算出场景的高度是多少，所以我们需要在前期阶段中将高度信息保存在G缓冲中。</p>
+<p>这完全由后台执行，但我们还是要了解它的存在，理解它的作用，因为它能够让我们知道为什么实时渲染会有一些强项和弱点。</p>
+<p>然后讲师提到了RenderDoc。</p>
+<p>刚好之前也拿这个RenderDoc 帧捕获调试器，提取过动态画面的单帧 静态图片/模型，导出过谷歌地图上的三维模型，大家可以去试试啊，也没几步。</p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/149670002">X Tesla：【Blender】Google Map+ GIS（全免费！国内国外 卫星地图数据都可转成三维模型！）zhuanlan.zhihu.com<img src="https://pic4.zhimg.com/v2-b5d18f31c2e585f4f23aa661f8905fa3_180x120.jpg" srcset="/img/loading.gif" alt="图标"></a></p>
+<p><img src="https://picb.zhimg.com/80/v2-78ff5826025f5b81401cee30cefbfeef_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p>我们也可以在UE4这里看到GBuffer的各种信息。</p>
+<p><img src="https://picb.zhimg.com/80/v2-9d050c1050a770ac988f7eed56c7d13a_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p>所有的图像加起来就构成了所谓的GBuffer，即GBuffer缓冲，如上Base Color、Specular等。</p>
+<p><img src="https://picb.zhimg.com/80/v2-8542607cf43267873976858bb4704b09_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<h2 id="【1-5】顶点着色器和像素着色器"><a href="#【1-5】顶点着色器和像素着色器" class="headerlink" title="【1.5】顶点着色器和像素着色器"></a>【1.5】顶点着色器和像素着色器</h2><p>在渲染过程中，会有一些非常简单的运算通常会被一遍又一遍地重复执行，会占用非常多的时间，如果用常规处理器计算会非常慢。无论是常规CPU还是其他常规计算机硬件，都不适合用于反复处理数以百万计的简单运算，因为这样效率会很低。</p>
+<p>着色器就是——专门用于进行此类重复工作的硬件和软件。着色器不管如何变化，本质上都是被用于在一些GPU特定区域中重复执行一些简单运算，<strong>这是实时渲染的核心，</strong>因此对于我们的渲染方式以及性能损耗有非常大的影响。</p>
+<p>CPU GPU 相关，这篇讲得好玩又透彻。</p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/61358167">xiaomengge：GPU并行架构及渲染优化zhuanlan.zhihu.com<img src="https://zhstatic.zhihu.com/assets/zhihu/editor/zhihu-card-default.svg" srcset="/img/loading.gif" alt="图标"></a></p>
+<h2 id="【像素着色器】Pixel-Shader-基于像素计算"><a href="#【像素着色器】Pixel-Shader-基于像素计算" class="headerlink" title="【像素着色器】Pixel Shader 基于像素计算"></a>【像素着色器】Pixel Shader 基于像素计算</h2><p>像素着色器会接受一个输入值，比如会接收屏幕中间像素值，然后它会计算出当要被渲染的对象距离摄像机这么远的时候，雾有一种颜色和浓度。</p>
+<p><img src="https://pic1.zhimg.com/80/v2-59b0f2a665c4a86c5d37525262ace013_1440w.jpg" srcset="/img/loading.gif" alt="img">开启大气雾</p>
+<p>先获取雾消逝时候的像素颜色，并在上面叠加颜色效果，然后在加入这种颜色的基础上，重新计算像素颜色。</p>
+<p><img src="https://pic4.zhimg.com/80/v2-da8a6f3260e34770b4cfc4e46f1fd889_1440w.jpg" srcset="/img/loading.gif" alt="img">关掉大气雾</p>
+<p>渲染流程中的几乎每一步都是用像素着色器完成的，通过修改输入值重新计算颜色，然后输出结果。</p>
+<p>所有实时光照，所有着色，材质，雾效，后期处理和许多其他效果，都是基于像素着色器进行渲染的，它对于渲染管线非常重要，第二节中会讲到。</p>
+<h2 id="【顶点着色器】Vertex-Shader-基于顶点计算"><a href="#【顶点着色器】Vertex-Shader-基于顶点计算" class="headerlink" title="【顶点着色器】Vertex Shader 基于顶点计算"></a>【顶点着色器】Vertex Shader 基于顶点计算</h2><p>讲师本节还没提到，下节学习呀。</p>
+<h2 id="【1-6】官方问题（课堂小结）"><a href="#【1-6】官方问题（课堂小结）" class="headerlink" title="【1.6】官方问题（课堂小结）"></a>【1.6】官方问题（课堂小结）</h2><p>【1】抗锯齿是延迟渲染的缺点</p>
+<p><img src="https://pic4.zhimg.com/80/v2-294f5eec5f4819769bce094e17afe473_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p>【2】G Buffer 会创建渲染过程后期各阶段需要的各种信息。</p>
+<p><img src="https://picb.zhimg.com/80/v2-f0facf6e860a0b34ef6cd4b2ca479d8c_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p>【3】延迟渲染适合3A游戏，对硬件设备要求高。正向渲染适合低配硬件设备（手机、VR等）</p>
+<p><img src="https://pic2.zhimg.com/80/v2-a155a33471e1afc806e6edf690dba0af_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p><img src="https://picb.zhimg.com/80/v2-0f833d294f203eec4d771668a6e5e4ce_1440w.png" srcset="/img/loading.gif" alt="img"></p>
+<h2 id="二、实时渲染性能相关"><a href="#二、实时渲染性能相关" class="headerlink" title="二、实时渲染性能相关"></a>二、实时渲染性能相关</h2><ul>
+<li><p>目标帧率</p>
+</li>
+<li><p>帧时间、GPU CPU</p>
+</li>
+<li><p>分析基础（Profiling Basics）</p>
+</li>
+<li><p>四种最为常见的性能问题</p>
+</li>
+<li><ul>
+<li>Translucency 半透明</li>
+<li>材质</li>
+<li>draw calls 绘制调用</li>
+<li>Shadows 阴影</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://pic2.zhimg.com/80/v2-b7f4c41bad4d27753f6262bdc4b5ca4f_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<hr>
+<h2 id="【2-1】Target-Frame-Rate-目标帧率-和-FrameTime帧时间"><a href="#【2-1】Target-Frame-Rate-目标帧率-和-FrameTime帧时间" class="headerlink" title="【2.1】Target Frame Rate 目标帧率 和 FrameTime帧时间"></a>【2.1】Target Frame Rate 目标帧率 和 FrameTime帧时间</h2><p>默认情况下，Unreal的目标帧率（Frame Rate）在每秒30帧左右，就是FPS啦，值越高效果越棒，画面越流畅。</p>
+<p>还有按秒测算性能的，如ms（milliseconds）毫秒。</p>
+<p>1s=1000ms。</p>
+<ul>
+<li>如果帧速率是30fps的话</li>
+<li>对应的frametime就是 1000/30≈ 33.3 毫秒每帧</li>
+</ul>
+<p>即</p>
+<ul>
+<li>framerate——每秒帧数——30fps——30 frame per second——每秒三十帧左右</li>
+<li>frametime——每帧秒数——33.3 mspf 吧 ——33.3 milliseconds per frame——每帧三十多毫秒左右</li>
+</ul>
+<p>用frametime 来描述场景的流畅程度，这是渲染单帧画面所需的时间，时间越久，帧率就越低，分子1000是固定的，所以时间和帧率是成反比关系的。</p>
+<ul>
+<li>60frame/ s，对应 16ms/frame</li>
+<li>30frame/ s，对应 33ms/frame</li>
+</ul>
+<p>ms越小，画面更流畅。</p>
+<p>总之，用frametime测算性能比framerate测算更加精确，在引擎开发中经常使用到这种单位。</p>
+<h3 id="【实际测算】"><a href="#【实际测算】" class="headerlink" title="【实际测算】"></a>【实际测算】</h3><p>虚幻cmd中</p>
+<p>【1】</p>
+<ul>
+<li><code>stat fps</code>显示帧率 ，或者是下面两个红框。</li>
+</ul>
+<p><img src="https://pic3.zhimg.com/80/v2-1510e9515b916a3bd91e71a10e91e741_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p>如下，它显示了帧率和frametime。</p>
+<p><img src="https://pic2.zhimg.com/80/v2-8d772b6d996068925fc2efdbb8e3d21c_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<ul>
+<li><code>t.maxfps 600</code>设置最大帧速率为600。（如果要评估性能，最好去掉帧率上限，否则无法真实反映场景的性能和画面效果）</li>
+</ul>
+<p>【2】</p>
+<ul>
+<li><code>stat unit</code> ，我们可以看到更多的数据，这就是用frametime ms毫秒为单位来进行测算场景性能的。</li>
+</ul>
+<p><img src="https://pic2.zhimg.com/80/v2-38db27ebf28622eac7488b8babf8ab8e_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p>Game（CPU）和GPU是最重要的指标。</p>
+<hr>
+<h3 id="【2-2】GPU和CPU的相关计算分配工作"><a href="#【2-2】GPU和CPU的相关计算分配工作" class="headerlink" title="【2.2】GPU和CPU的相关计算分配工作"></a>【2.2】GPU和CPU的相关计算分配工作</h3><ul>
+<li>CPU一般负责场景中所有与 Transform（位置、旋转、缩放）变换相关的计算工作，如动画、物理、碰撞、AI、SpawnActors</li>
+<li>GPU一般负责光照、模型自身渲染、反射、着色等相关工作。</li>
+</ul>
+<p><img src="https://pic4.zhimg.com/80/v2-19e8212d8469aee366befb32649b2947_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p>如果我们想提升游戏的性能，就需要确定是CPU还是GPU影响的，如果是CPU影响的，就没必要优化GPU，两者相互制约。</p>
+<p><strong>要弄清谁影响应用导致运行慢，否则要想提升性能都不知道要调整工作流当中的哪个环节。</strong></p>
+<hr>
+<h2 id="【2-3】Profiling-Basics-分析基础"><a href="#【2-3】Profiling-Basics-分析基础" class="headerlink" title="【2.3】Profiling Basics 分析基础"></a>【2.3】Profiling Basics 分析基础</h2><p>基础的就是stat unit/fps，但是还有很多其他深奥的命令。</p>
+<p>如果要取消当前分析数据显示，就在cmd中再输入一遍这条命令，或者是viewport中下拉小箭头将对应的数据勾去掉。</p>
+<p>常用的：</p>
+<ul>
+<li><code>stat rhi</code> drawcall次数及场景内多边形三角形数量</li>
+</ul>
+<p><img src="https://pic1.zhimg.com/80/v2-e826105b5127e2ef8885165689c10275_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<ul>
+<li><code>stat scenerendering</code> 我们可以看清每一个环节渲染所耗费的时间</li>
+</ul>
+<p><img src="https://pic4.zhimg.com/80/v2-dcfb215784a3ab3f386e151f8965b8a4_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<ul>
+<li><code>stat gpu</code> GPU的相关渲染工作耗费的时间</li>
+</ul>
+<p><img src="https://pic1.zhimg.com/80/v2-e355bdb93820af9a106d2bb485abb98b_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p>更多的还是到这里advanced查找，cmd输入的话，对应的名称前面加stat就可以了。</p>
+<p><img src="https://pic2.zhimg.com/80/v2-be5fe944d6414d2c1d326768cc9d3dc5_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<hr>
+<h2 id="【2-4】四种常见的性能问题"><a href="#【2-4】四种常见的性能问题" class="headerlink" title="【2.4】四种常见的性能问题"></a>【2.4】四种常见的性能问题</h2><hr>
+<h3 id="【1】Translucency"><a href="#【1】Translucency" class="headerlink" title="【1】Translucency"></a>【1】Translucency</h3><h3 id="渲染半透明物体非常复杂，而且开销很大。"><a href="#渲染半透明物体非常复杂，而且开销很大。" class="headerlink" title="渲染半透明物体非常复杂，而且开销很大。"></a>渲染半透明物体非常复杂，而且开销很大。</h3><p><img src="https://pic1.zhimg.com/80/v2-5cfdd071345e616af34c509d08497491_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p>有趣的是，当相机离半透明物体很远的时候，帧率又提高到了原先的水平。所以<strong>距离</strong>也会影响性能（像素着色器嘛）。</p>
+<p><img src="https://pic4.zhimg.com/80/v2-3c507dd0daf6e7d827be22abaa6108b3_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p>这和 Pixel Shader 像素着色器的操作有关，半透明物体渲染工作十分依赖它。</p>
+<p>我们可以打开Shader Complexity查看着色复杂程度</p>
+<p><img src="https://pic4.zhimg.com/80/v2-9803a5677c2d35d0070feee050e2bd3e_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p>绿色优 红色过渡 白色差。</p>
+<p><strong>屏幕中每增加一层平面，就要多渲染一次半透明的效果，需要重新计算这些像素，因为它们叠加在其他层的上方。</strong>这样很快，像素着色器的开销就会非常巨大。</p>
+<p><img src="https://pic3.zhimg.com/80/v2-30e807ce946bfb45bc654390e5883d71_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p>学会使用Shader Complexity 着色器复杂度，谨防半透明开销过大。这也是为何相机在远处时，开销会变小的原因，因为物体当前只需要一丁点像素来渲染半透明平面。</p>
+<p><img src="https://pic2.zhimg.com/80/v2-a70b3c3d0471cc95f4dc1367bea69849_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<hr>
+<h3 id="【2】材质"><a href="#【2】材质" class="headerlink" title="【2】材质"></a>【2】材质</h3><p>材质也是基于像素着色器的。如果如下给定Noise材质，可以看到编译后有两千多条指令。</p>
+<p><img src="https://picb.zhimg.com/80/v2-206ca350cb3313e06d72dee09503053d_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p>而Complexity长条最多才2000条指令。</p>
+<p><img src="https://pic4.zhimg.com/80/v2-1e10285dbea52ee27195160e60780663_1440w.png" srcset="/img/loading.gif" alt="img"></p>
+<p>这样视口中 显示模型为炽热白色。</p>
+<p><img src="https://pic4.zhimg.com/80/v2-dd156b335b32a8de39aa9e78f4a5279a_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p>当相机离物体越来越近的时候，帧率同样会下降。</p>
+<p><strong>屏幕上复杂材质产生的像素越多，复杂材质对性能的影响就越大。如上Noise复杂材质产生很多像素。</strong></p>
+<hr>
+<h3 id="【3】Draw-Calls-绘制调用"><a href="#【3】Draw-Calls-绘制调用" class="headerlink" title="【3】Draw Calls 绘制调用"></a>【3】Draw Calls 绘制调用</h3><p><strong>当引擎渲染场景时，不会逐像素渲染，也不会逐区域渲染，逐线条渲染，而是逐对象渲染。</strong></p>
+<p>可以用 Renderdoc 查看GPU到底在渲染啥？Renderdoc适合各种实时渲染工具，可以从显卡中抓取数据并分析。</p>
+<p>下面红框中就是要依次渲染的各个模型了，绿色是模型网格体。</p>
+<p><img src="https://pic1.zhimg.com/80/v2-c1128c16368efc9b9fe3f9d867b2c26d_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<h3 id="每个模型的渲染都是一次Draw-Call-绘制调用，drawcall绘制调用还有一些其他含义，但简单起见，就假设一个模型就是一次绘制调用。"><a href="#每个模型的渲染都是一次Draw-Call-绘制调用，drawcall绘制调用还有一些其他含义，但简单起见，就假设一个模型就是一次绘制调用。" class="headerlink" title="每个模型的渲染都是一次Draw Call 绘制调用，drawcall绘制调用还有一些其他含义，但简单起见，就假设一个模型就是一次绘制调用。"></a>每个模型的渲染都是一次Draw Call 绘制调用，drawcall绘制调用还有一些其他含义，但简单起见，就假设一个模型就是一次绘制调用。</h3><p>因此，开销并不取决于场景中的多边形数量，而是取决于绘制调用，即DrawCall的次数。</p>
+<p>场景中会有多少独立的模型会决定渲染质量。</p>
+<p>如下，粒子的Mesh Renderer生成750个雕塑，帧率直线下降到15FPS。</p>
+<p><img src="https://picb.zhimg.com/80/v2-d696b50e4bd225c5990b42eedafee26d_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p>我们可以查看draw call 次数通过我们上述的 <code>stat rhi</code>命令</p>
+<p>在stat rhi 中我们还可以看到</p>
+<ul>
+<li>三角形绘制次数（Triangle Drawn）即要渲染的多边形总数量</li>
+<li>还有<strong>Draw Primitive Calls（绘制图元次数，就是Draw Calls）</strong></li>
+<li>还有Lines Drawn</li>
+</ul>
+<p><img src="https://picb.zhimg.com/80/v2-ee6bafa222858a1f0b935b1e6cbce7fb_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p><strong>可以看到这750个雕塑共调用次数8400多，场景模型面数总量1700万多 。</strong></p>
+<p>而这个彩色多边形的多边形数量较少，但是绘制调用的次数会更多，因为每个材质球就意味着一次绘制调用。（这个可以归类到2.4.2中材质对渲染性能的影响）</p>
+<p><img src="https://pic2.zhimg.com/80/v2-46bcd8aa804c8fe6a877dcc337a22863_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p>这个带材质的，要绘制的三角形 面数总量1600多万多，但是要DrawCall 三四万，FPS降至了10。</p>
+<p><img src="https://pic3.zhimg.com/80/v2-5d87a4c5f6055cd1a2eb0d7c06068dc3_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p>如果去掉材质，只有一种材质。</p>
+<p><img src="https://picb.zhimg.com/80/v2-e8bf9cd81b915e43fb1fca93ae6f73b8_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p>而且面数还多得很，但性能显著提升。</p>
+<p><img src="https://pic1.zhimg.com/80/v2-43764a13f0ba3a4326132c3a87635999_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p>引擎以绘制调用为单位进行渲染。以上我们分别用三座雕像做实验，试着改变模型的渲染数量，查看它们对性能的影响。</p>
+<hr>
+<h3 id="【4】动态阴影"><a href="#【4】动态阴影" class="headerlink" title="【4】动态阴影"></a>【4】动态阴影</h3><p>动态阴影的开销也非常大。开销大的不是动态光照，而是动态阴影。</p>
+<p>同样我们用上述的雕塑进行测试。</p>
+<p>可以用ConstructionScript 构造脚本写一个小函数，让灯光在指定场景范围内生成灯光。</p>
+<p>打勾Cast Dynamic Shadows 查看动态阴影对渲染的影响。</p>
+<p><img src="https://pic4.zhimg.com/80/v2-10ef44cd081f403caaa7345e1c6e496a_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p>打开关闭 Shadows 阴影测试，关闭性能显著提升，打开下降。</p>
+<p><img src="https://pic3.zhimg.com/80/v2-e8406701ef8ae19add164776b7890daf_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p><strong>所以动态阴影也会导致性能差异，并非光源本身，删掉一些光源后，性能会提升，但是并没有阴影的影响那么大。</strong></p>
+<p>如果将场景中的模型替换成高面数模型，性能直线下降。</p>
+<p><strong>动态阴影会跟随场景中的多边形数量升高而产生更多的开销。</strong></p>
+<p>所以如果想要使用大量动态阴影需要谨慎处理场景中的多边形数量。（尤其是大型森林渲染，好多植物嘛）</p>
+<p>相反，<strong>如果我们只打算使用静态光照或者是根本不用动态光照，我们可以随意使用更多的多边形。</strong></p>
+<hr>
+<h2 id="【课后测试总结】"><a href="#【课后测试总结】" class="headerlink" title="【课后测试总结】"></a>【课后测试总结】</h2><p><img src="https://pic1.zhimg.com/80/v2-8a0f9338eed6381e2ebab84bbdd0872d_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p><img src="https://pic2.zhimg.com/80/v2-f3a20cca767f1dd833bf6d5ab67fb438_1440w.png" srcset="/img/loading.gif" alt="img"></p>
+<h2 id="三、用Renderdoc-获取虚幻单帧图像"><a href="#三、用Renderdoc-获取虚幻单帧图像" class="headerlink" title="三、用Renderdoc 获取虚幻单帧图像"></a>三、用Renderdoc 获取虚幻单帧图像</h2><p>虚幻官方文档：</p>
+<p><a href="https://link.zhihu.com/?target=https://docs.unrealengine.com/en-US/Engine/Performance/RenderDoc/index.html">RenderDocdocs.unrealengine.com</a></p>
+<hr>
+<h3 id="【1】下载Renderdoc"><a href="#【1】下载Renderdoc" class="headerlink" title="【1】下载Renderdoc"></a>【1】下载Renderdoc</h3><p><a href="https://link.zhihu.com/?target=https://renderdoc.org/builds">https://renderdoc.org/buildsrenderdoc.org</a></p>
+<hr>
+<h3 id="【2】解压并打开Renderdocgui-exe可执行程序"><a href="#【2】解压并打开Renderdocgui-exe可执行程序" class="headerlink" title="【2】解压并打开Renderdocgui.exe可执行程序"></a>【2】解压并打开Renderdocgui.exe可执行程序</h3><p><img src="https://pic1.zhimg.com/80/v2-f6f3d6764c5312275ca9722ee4b4d053_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<hr>
+<h3 id="【3】开启UE4项目的Renderdoc插件并重启项目（为了引擎内F12就可以直接捕获或通过命令行捕获）"><a href="#【3】开启UE4项目的Renderdoc插件并重启项目（为了引擎内F12就可以直接捕获或通过命令行捕获）" class="headerlink" title="【3】开启UE4项目的Renderdoc插件并重启项目（为了引擎内F12就可以直接捕获或通过命令行捕获）"></a>【3】开启UE4项目的Renderdoc插件并重启项目（为了引擎内F12就可以直接捕获或通过命令行捕获）</h3><p><img src="https://pic1.zhimg.com/80/v2-b4fc42d210459230c7c7ece1a8fdfbba_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<hr>
+<h3 id="【4】设置要捕获的UE4指定项目"><a href="#【4】设置要捕获的UE4指定项目" class="headerlink" title="【4】设置要捕获的UE4指定项目"></a>【4】设置要捕获的UE4指定项目</h3><p><img src="https://pic1.zhimg.com/80/v2-bf4569c205f402959c6df19b8620c4cc_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p>这个Executable Path实际上是通过cmd命令行 启动引擎然后让我们选项目的，我们还可以通过cmd命令行打开指定的某个项目，指定项目的某个关卡，具体看爱戴老师的文章哈，这样直接cmd渲染视频也非常快。</p>
+<p>[戴巍：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/177696943">UE4,automation]UE4批渲染cmd篇zhuanlan.zhihu.com<img src="https://picb.zhimg.com/v2-2455d9ee3775f5ef13dc87da176d0812_180x120.jpg" srcset="/img/loading.gif" alt="图标"></a></p>
+<p>简而言之就是：</p>
+<ol>
+<li>新建并打开txt文件</li>
+<li>双引号中填引擎对应版本的editor.exe，然后空格一次，加上 你的项目路径（u.project)，打开指定地图就是再加上 /Game/……(Game就是你的Content）</li>
+<li>然后修改txt后缀为 bat批处理文件。</li>
+</ol>
+<pre><code class="hljs text">&quot;D:\Program Files\UE_4.24\Engine\Binaries\Win64\UE4Editor.exe&quot; 
+D:\Projects\UnrealProjects\renderMovieTest\renderMovieTest.uproject /Game/maps/shot0010</code></pre>
+
+
+
+<h3 id="针对Renderdoc："><a href="#针对Renderdoc：" class="headerlink" title="针对Renderdoc："></a>针对Renderdoc：</h3><p>【打开引擎选项目】</p>
+<pre><code class="hljs text">D:\Program Files\Epic Games\UE_4.25\Engine\Binaries\Win64\UE4Editor.exe</code></pre>
+
+<p>【直接打开指定项目】</p>
+<p>设置Command-Line Arguments。</p>
+<p><img src="https://pic3.zhimg.com/80/v2-49f329b2bca84815fc9e9ca9c8c8f1da_1440w.png" srcset="/img/loading.gif" alt="img"></p>
+<hr>
+<h3 id="【5】从Renderdoc-Launch打开UE4项目，可以看到这个D3D11。"><a href="#【5】从Renderdoc-Launch打开UE4项目，可以看到这个D3D11。" class="headerlink" title="【5】从Renderdoc Launch打开UE4项目，可以看到这个D3D11。"></a>【5】从Renderdoc Launch打开UE4项目，可以看到这个D3D11。</h3><p>当时打开Chrome捕捉国外模型也出现过这个黑条。</p>
+<p><img src="https://pic4.zhimg.com/80/v2-df25276f1dba7d757535ca3090076ebf_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<hr>
+<h3 id="【6】捕捉注意事项"><a href="#【6】捕捉注意事项" class="headerlink" title="【6】捕捉注意事项"></a>【6】捕捉注意事项</h3><p>看了大佬们的解决方案，并没有起效，测试了一番总结一下。</p>
+<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/400925990">ue4 renderdoc capture?www.zhihu.com<img src="https://zhstatic.zhihu.com/assets/zhihu/editor/zhihu-card-default.svg" srcset="/img/loading.gif" alt="图标"></a></p>
+<p><strong>【6.1】必须从Renderdoc Launch 项目</strong></p>
+<p><strong>【6.2】两种捕获方式</strong></p>
+<ul>
+<li>回到RenderDoc中 Capture Frames Immediately</li>
+<li>或者是直接在UE4 界面中 按下 F12/PrintScreen（PS） 即可捕获。</li>
+</ul>
+<p><img src="https://pic2.zhimg.com/80/v2-c94e34d3d86718bed39d9fa05a986d59_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p><strong>【6.3】成功捕获Viewport内场景方案</strong></p>
+<p>最终我跌过无数坑反复测试后 成功的办法是：</p>
+<p>它不是提示要F11全屏Cycle Betwteen Windows嘛。</p>
+<p><img src="https://pic4.zhimg.com/80/v2-bf023520639c5a71692813bfdd05bba1_1440w.png" srcset="/img/loading.gif" alt="img"></p>
+<p>那就NewEditorWindow运行。</p>
+<p>F11 然后再F12捕获就可以了。</p>
+<p><img src="https://pic1.zhimg.com/80/v2-71935c2259f8ef7f74646f9c81527254_1440w.png" srcset="/img/loading.gif" alt="img"></p>
+<p><img src="https://pic3.zhimg.com/80/v2-8386c038099183d6ebd4a3096393a847_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p><strong>【6.4】其他相关测试</strong></p>
+<p>【1】4.25安装renderdoc插件后，没有这个直接渲染的按钮。</p>
+<p><img src="https://pic4.zhimg.com/80/v2-5db0b5b5f82919247af7fb0124315098_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p>【2】默认不勾选这个Capture all activity，可是还是捕获到所有窗口。</p>
+<p><img src="https://picb.zhimg.com/80/v2-533a9fb9baa6231b47474cf5e08a25c0_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p>【3】GameView不成功。</p>
+<p>Alt+P项目运行后New Editor Window，然后Shift+F1 Eject 挪出鼠标导Renderdoc中Capture Frames。</p>
+<hr>
+<h3 id="【7】测试调节"><a href="#【7】测试调节" class="headerlink" title="【7】测试调节"></a>【7】测试调节</h3><p>然后双击打开捕获的图像即可。（确保是Established 连接建立，而且API是D3D11才能捕获）。</p>
+<p>【Event Browser】为当前捕捉事件的所有过程，可以看到有很多Draw Index，GBuffer也在其中（BasePass）。</p>
+<p>【MeshViewer】查看三角形绘制情况</p>
+<p><img src="https://picb.zhimg.com/80/v2-9192e43769b90a4d6e18362dc458f4cf_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p>【Pipeline State】查看渲染的整个流程</p>
+<ul>
+<li>顶点着色器</li>
+<li>剔除</li>
+<li>光栅化</li>
+<li>像素着色器</li>
+</ul>
+<p>啥的。</p>
+<p><img src="https://pic1.zhimg.com/80/v2-37d03f66ac694ee17464f3ef8c7a3106_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p>【TextureViewer】BasePass中找到各种GBuffer</p>
+<p><img src="https://pic4.zhimg.com/80/v2-900056b781b306e423e503013415a274_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p><img src="https://pic2.zhimg.com/v2-977555ebe37e748ed1e94c71841ae3ea_b.jpg" srcset="/img/loading.gif" alt="img"></p>
+<p>也可以用Renderdoc捕获Google三维地图模型呀。</p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/149670002">X Tesla：【Blender】Google Map+ GIS（全免费！国内国外 卫星地图数据都可转成三维模型！）zhuanlan.zhihu.com<img src="https://pic4.zhimg.com/v2-b5d18f31c2e585f4f23aa661f8905fa3_180x120.jpg" srcset="/img/loading.gif" alt="图标"></a></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2020/08/08/%E3%80%90UE4%E3%80%91%E6%9C%89%E6%84%8F%E6%80%9D%E5%90%A7/">
+                        <span class="hidden-mobile">【UE4】有意思吧</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <div class="disqus" style="width:100%">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      function loadDisqus() {
+        var disqus_config = function () {
+          this.page.url = 'http://yoursite.com/2020/08/14/【UE4】实时渲染/';
+          this.page.identifier = '/2020/08/14/【UE4】实时渲染/';
+        };
+        (function () {
+          var d = document,
+            s = d.createElement('script');
+          s.src = '//' + '' + '.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      }
+      waitElementVisible('disqus_thread', loadDisqus);
+    </script>
+    <noscript>Please enable JavaScript to view the
+      <a target="_blank" href="https://disqus.com/?ref_noscript" rel="nofollow noopener noopener">comments powered by Disqus.</a>
+    </noscript>
+  </div>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;TOC</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+    <!-- APlayer 音乐播放器 -->
+    <div id="aplayer"></div>
+    <script defer src="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js" ></script>
+<link  rel="stylesheet" href="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css" />
+<script type="text/javascript">
+  var oldLoadAp = window.onload;
+  window.onload = function () {
+    oldLoadAp && oldLoadAp();
+
+    new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: true,
+      autoplay: 'true' === 'true',
+      loop: 'all',
+      order: 'random',
+      theme: '#b7daff',
+      preload: 'none',
+      audio: [{"name":"GAI串烧","artist":"GAI","url":"/songs/gai.mp3","cover":"/img/gai.jpeg"}]
+    });
+  }
+</script>
+
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+      <i class="iconfont icon-love"></i>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
+    </div>
+    
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- 不蒜子统计PV -->
+        <span id="busuanzi_container_site_pv" style="display: none">
+            总访问量 
+            <span id="busuanzi_value_site_pv"></span>
+             次
+          </span>
+      
+      
+        <!-- 不蒜子统计UV -->
+        <span id="busuanzi_container_site_uv" style="display: none">
+            总访客数 
+            <span id="busuanzi_value_site_uv"></span>
+             人
+          </span>
+      
+    
+  </div>
+
+
+    
+
+    
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '#post-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "UE4&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+  
+
+  
+    <!-- MathJax -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        options: {
+          renderActions: {
+            findScript: [10, doc => {
+              document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+                const display = !!node.type.match(/; *mode=display/);
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                const text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = { node: text, delim: '', n: 0 };
+                math.end = { node: text, delim: '', n: 0 };
+                doc.math.push(math);
+              });
+            }, '', false],
+            insertedScript: [200, () => {
+              document.querySelectorAll('mjx-container').forEach(node => {
+                let target = node.parentNode;
+                if (target.nodeName.toLowerCase() === 'li') {
+                  target.parentNode.classList.add('has-jax');
+                }
+              });
+            }, '', false]
+          }
+        }
+      };
+    </script>
+
+    <script async src="https://cdn.staticfile.org/mathjax/3.0.5/es5/tex-svg.js" ></script>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
